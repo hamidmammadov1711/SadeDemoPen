@@ -1,0 +1,13 @@
+# Alembic migration config (örnek)
+# Alembic ile migration üçün aşağıdakı komanda istifadə olunur:
+# alembic init alembic
+# alembic revision --autogenerate -m "initial"
+# alembic upgrade head
+
+# requirements.txt-a əlavə edin:
+# sqlalchemy
+# aiosqlite
+# alembic
+
+# Alembic config faylı və migration scriptləri avtomatik yaradılır.
+# Daha sonra backend/database.py və modellərinizə görə migrationlar işləyəcək.

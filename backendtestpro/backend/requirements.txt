@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+slowapi
+pydantic
+pytest
+python-jose
+sqlalchemy
+aiosqlite
+alembic

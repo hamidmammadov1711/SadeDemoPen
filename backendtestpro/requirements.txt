@@ -1,0 +1,11 @@
+# requirements.txt
+# Gerekli Python paketleri burada listelenecek
+fastapi
+uvicorn
+pydantic
+pytest
+httpx
+slowapi
+sqlalchemy
+aiosqlite
+alembic

@@ -1,0 +1,23 @@
+INFO:root:scanme.nmap.org \u2192 CRITICAL: Simulated scan on scanme.nmap.org: SQL Injection found
+INFO:root:scanme.nmap.org \u2192 CRITICAL: Simulated scan on scanme.nmap.org: SQL Injection found
+INFO:root:scanme.nmap.org \u2192 CRITICAL: Simulated scan on scanme.nmap.org: SQL Injection found
+INFO:root:scheme.nmap.org \u2192 CRITICAL: Simulated scan on scheme.nmap.org: SQL Injection found
+{"timestamp": "2025-08-15T17:35:09.242953", "event_type": "run-test", "details": {"ip": "127.0.0.1", "target": "scheme.nmap.org", "status": "CRITICAL"}}
+INFO:root:scheme.nmap.org \u2192 CRITICAL: Simulated scan on scheme.nmap.org: SQL Injection found
+{"timestamp": "2025-08-15T17:35:39.612060", "event_type": "run-test", "details": {"ip": "127.0.0.1", "target": "scheme.nmap.org", "status": "CRITICAL"}}
+INFO:root:scheme.nmap.org \u2192 CRITICAL: Simulated scan on scheme.nmap.org: SQL Injection found
+{"timestamp": "2025-08-15T17:35:40.364378", "event_type": "run-test", "details": {"ip": "127.0.0.1", "target": "scheme.nmap.org", "status": "CRITICAL"}}
+INFO:root:scheme.nmap.org \u2192 CRITICAL: Simulated scan on scheme.nmap.org: SQL Injection found
+{"timestamp": "2025-08-15T17:35:40.898347", "event_type": "run-test", "details": {"ip": "127.0.0.1", "target": "scheme.nmap.org", "status": "CRITICAL"}}
+INFO:root:scheme.nmap.org \u2192 CRITICAL: Simulated scan on scheme.nmap.org: SQL Injection found
+{"timestamp": "2025-08-15T17:35:41.455252", "event_type": "run-test", "details": {"ip": "127.0.0.1", "target": "scheme.nmap.org", "status": "CRITICAL"}}
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test
+WARNING:slowapi:ratelimit 5 per 1 minute (127.0.0.1) exceeded at endpoint: /run-test

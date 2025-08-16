@@ -1,0 +1,29 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "BackendTestPro API",
+    "version": "1.0.0",
+    "description": "Backend və CTF/Lab funksionallıqları üçün tam API sənədi."
+  },
+  "paths": {
+    "/register": {"post": {"summary": "İstifadəçi qeydiyyatı", "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/User"}}}}, "responses": {"200": {"description": "Qeydiyyat uğurlu"}}}},
+    "/login": {"post": {"summary": "Login", "requestBody": {"content": {"application/json": {"schema": {"type": "object", "properties": {"email": {"type": "string"}, "password": {"type": "string"}}}}}}, "responses": {"200": {"description": "Login uğurlu"}}}},
+    "/workspace/{user_id}": {"get": {"summary": "Otaq məlumatı", "parameters": [{"name": "user_id", "in": "path", "required": true, "schema": {"type": "integer"}}], "responses": {"200": {"description": "Workspace"}}}},
+    "/packages": {"get": {"summary": "Paket siyahısı", "responses": {"200": {"description": "Paketlər"}}}},
+    "/subscribe": {"post": {"summary": "Paket seçimi", "parameters": [{"name": "user_id", "in": "query", "required": true, "schema": {"type": "integer"}}, {"name": "package_id", "in": "query", "required": true, "schema": {"type": "integer"}}], "responses": {"200": {"description": "Paket aktivləşdirildi"}}}},
+    "/run-test": {"post": {"summary": "Test başlat", "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/TestRequest"}}}}, "parameters": [{"name": "lang", "in": "query", "schema": {"type": "string"}}], "responses": {"200": {"description": "Test nəticəsi"}}}},
+    "/report": {"post": {"summary": "Rapor", "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/TestRequest"}}}}, "parameters": [{"name": "lang", "in": "query", "schema": {"type": "string"}}], "responses": {"200": {"description": "Rapor"}}}},
+    "/full-test": {"post": {"summary": "Geniş test", "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/TestRequest"}}}}, "parameters": [{"name": "lang", "in": "query", "schema": {"type": "string"}}], "responses": {"200": {"description": "Test nəticələri"}}}},
+    "/ai-analysis": {"post": {"summary": "AI analiz", "requestBody": {"content": {"application/json": {"schema": {"type": "array", "items": {"type": "object"}}}}}, "parameters": [{"name": "lang", "in": "query", "schema": {"type": "string"}}], "responses": {"200": {"description": "AI məsləhətləri"}}}},
+    "/labs": {"get": {"summary": "Lab siyahısı", "responses": {"200": {"description": "Lablar"}}}},
+    "/challenges/{lab_id}": {"get": {"summary": "Lab tapşırıqları", "parameters": [{"name": "lab_id", "in": "path", "required": true, "schema": {"type": "integer"}}], "responses": {"200": {"description": "Tapşırıqlar"}}}},
+    "/submit-flag": {"post": {"summary": "Flag göndər", "parameters": [{"name": "team_id", "in": "query", "required": true, "schema": {"type": "integer"}}, {"name": "challenge_id", "in": "query", "required": true, "schema": {"type": "integer"}}, {"name": "submitted_flag", "in": "query", "required": true, "schema": {"type": "string"}}], "responses": {"200": {"description": "Flag nəticəsi"}}}},
+    "/leaderboard": {"get": {"summary": "CTF leaderboard", "responses": {"200": {"description": "Sıralama"}}}}
+  },
+  "components": {
+    "schemas": {
+      "User": {"type": "object", "properties": {"username": {"type": "string"}, "email": {"type": "string"}, "password": {"type": "string"}}},
+      "TestRequest": {"type": "object", "properties": {"target": {"type": "string"}}}
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "id": 1,
+  "title": "SQL Injection",
+  "description": "Login formunu bypass et",
+  "flag": "CTF{sql_master}",
+  "difficulty": "medium"
+}
+    
